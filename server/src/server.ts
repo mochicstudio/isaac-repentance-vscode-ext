@@ -1,7 +1,3 @@
-/* --------------------------------------------------------------------------------------------
- * Copyright (c) Microsoft Corporation. All rights reserved.
- * Licensed under the MIT License. See License.txt in the project root for license information.
- * ------------------------------------------------------------------------------------------ */
 import {
   createConnection,
   TextDocuments,
@@ -14,12 +10,15 @@ import {
   CompletionItemKind,
   TextDocumentPositionParams,
   TextDocumentSyncKind,
-  InitializeResult
+  InitializeResult,
+  CompletionParams
 } from 'vscode-languageserver/node';
 
 import {
   TextDocument
 } from 'vscode-languageserver-textdocument';
+
+import { EntityType } from './enum/entity-type.enum';
 
 // Create a connection for the server, using Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
@@ -54,7 +53,8 @@ connection.onInitialize((params: InitializeParams) => {
       textDocumentSync: TextDocumentSyncKind.Incremental,
       // Tell the client that this server supports code completion.
       completionProvider: {
-        resolveProvider: true
+        resolveProvider: true,
+        triggerCharacters: ['.']
       }
     }
   };
@@ -78,6 +78,8 @@ connection.onInitialized(() => {
       connection.console.log('Workspace folder change event received.');
     });
   }
+
+  connection.window.showInformationMessage('Isaac Repentance API Running ...');
 });
 
 // The example settings
@@ -186,45 +188,47 @@ connection.onDidChangeWatchedFiles(_change => {
   connection.console.log('We received an file change event');
 });
 
-// This handler provides the initial list of the completion items.
 connection.onCompletion(
-  (_textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
-    // The pass parameter contains the position of the text document in
-    // which code complete got requested. For the example we ignore this
-    // info and always provide the same completion items.
-    return [
-      {
-        label: 'TypeScript',
-        kind: CompletionItemKind.Text,
-        data: 1
-      },
-      {
-        label: 'JavaScript',
-        kind: CompletionItemKind.Text,
-        data: 2
-      }
-    ];
+  (completionParams: CompletionParams): CompletionItem[] => {
+    let completionItems: CompletionItem[] = [];
+    const doc = documents.all().find(doc => doc.uri === completionParams.textDocument.uri);
+    const line = doc?.getText({
+      start: { line: completionParams.position.line, character: 0 },
+      end: completionParams.position
+    });
+
+    completionItems.push({
+      label: 'EntityType',
+      kind: CompletionItemKind.Enum,
+      data: 'EntityType'
+    });
+
+    if (line?.endsWith('EntityType.')) {
+      type EntityTypeKeys = keyof typeof EntityType;
+      const entityTypeKeys = Object.keys(EntityType) as EntityTypeKeys[];
+      completionItems.pop();
+
+      entityTypeKeys.map((entityType: string) => {
+        if (EntityType[+entityType]) {
+          completionItems.push({
+            label: `${EntityType[+entityType]}`,
+            kind: CompletionItemKind.EnumMember,
+            data: entityType
+          });
+        }
+      });
+    }
+
+    return completionItems;
   }
 );
 
-// This handler resolves additional information for the item selected in
-// the completion list.
 connection.onCompletionResolve(
   (item: CompletionItem): CompletionItem => {
-    if (item.data === 1) {
-      item.detail = 'TypeScript details';
-      item.documentation = 'TypeScript documentation';
-    } else if (item.data === 2) {
-      item.detail = 'JavaScript details';
-      item.documentation = 'JavaScript documentation';
-    }
+    item.detail = item.data
     return item;
   }
 );
 
-// Make the text document manager listen on the connection
-// for open, change and close text document events
 documents.listen(connection);
-
-// Listen on the connection
 connection.listen();
