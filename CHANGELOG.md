@@ -1,9 +1,14 @@
-# Change Log
-
-All notable changes to the "isaac-repentance-api" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+# [Change Log](https://keepachangelog.com/en/1.0.0/)
+## [0.0.4]
+### Added
+Icon
+## [0.0.3]
+### Added
+Completion for ActiveSlot Enums
+Partial completion for All Enums
+## [0.0.2]
+### Added
+Completion for ActionTriggers Enum
+## [0.0.1]
+### Added
+Completion for EntityType Enum
