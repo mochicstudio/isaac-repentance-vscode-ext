@@ -18,7 +18,9 @@ import {
   TextDocument
 } from 'vscode-languageserver-textdocument';
 
+import { AllEnums } from './enum/all-enums.enum';
 import { ActionTriggers } from './enum/action-triggers.enum';
+import { ActiveSlot } from './enum/active-slot.enum';
 import { EntityType } from './enum/entity-type.enum';
 
 // Create a connection for the server, using Node's IPC as a transport.
@@ -198,17 +200,46 @@ connection.onCompletion(
       end: completionParams.position
     });
 
-    completionItems.push({
-      label: 'EntityType',
-      kind: CompletionItemKind.Enum,
-      data: 'EntityType'
+    type AllEnumsKeys = keyof typeof AllEnums;
+    const allEnumsKeys = Object.keys(AllEnums) as AllEnumsKeys[];
+
+    allEnumsKeys.map((oneEnum: string) => {
+      completionItems.push({
+        label: oneEnum,
+        kind: CompletionItemKind.Enum,
+        data: AllEnums[oneEnum as keyof typeof AllEnums]
+      });
     });
 
-    completionItems.push({
-      label: 'ActionTriggers',
-      kind: CompletionItemKind.Enum,
-      data: 'ActionTriggers'
-    });
+    if (line?.endsWith('ActionTriggers.')) {
+      type ActionTriggersKeys = keyof typeof ActionTriggers;
+      const actionTriggersKeys = Object.keys(ActionTriggers) as ActionTriggersKeys[];
+      completionItems = [];
+
+      actionTriggersKeys.map((actionTrigger: string) => {
+        completionItems.push({
+          label: actionTrigger,
+          kind: CompletionItemKind.EnumMember,
+          data: ActionTriggers[actionTrigger as keyof typeof ActionTriggers]
+        });
+      });
+    }
+
+    if (line?.endsWith('ActiveSlot.')) {
+      type ActiveSlotKeys = keyof typeof ActiveSlot;
+      const activeSlotKeys = Object.keys(ActiveSlot) as ActiveSlotKeys[];
+      completionItems = [];
+
+      activeSlotKeys.map((activeSlot: string) => {
+        if (ActiveSlot[+activeSlot]) {
+          completionItems.push({
+            label: `${ActiveSlot[+activeSlot]}`,
+            kind: CompletionItemKind.EnumMember,
+            data: activeSlot
+          });
+        }
+      });
+    }
 
     if (line?.endsWith('EntityType.')) {
       type EntityTypeKeys = keyof typeof EntityType;
@@ -223,20 +254,6 @@ connection.onCompletion(
             data: entityType
           });
         }
-      });
-    }
-
-    if (line?.endsWith('ActionTriggers.')) {
-      type ActionTriggersKeys = keyof typeof ActionTriggers;
-      const actionTriggersKeys = Object.keys(ActionTriggers) as ActionTriggersKeys[];
-      completionItems = [];
-
-      actionTriggersKeys.map((actionTrigger: string) => {
-        completionItems.push({
-          label: actionTrigger,
-          kind: CompletionItemKind.EnumMember,
-          data: ActionTriggers[actionTrigger as keyof typeof ActionTriggers]
-        });
       });
     }
 
