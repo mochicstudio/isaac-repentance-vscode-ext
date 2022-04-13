@@ -9,6 +9,7 @@ suite('Should do completion', () => {
     await testCompletion(docUri, new vscode.Position(0, 0), {
       items: [
         { label: 'ActionTriggers', kind: vscode.CompletionItemKind.Enum },
+        { label: 'ActiveSlot', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityType', kind: vscode.CompletionItemKind.Enum }
       ]
     });

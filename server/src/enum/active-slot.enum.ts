@@ -1,0 +1,6 @@
+export enum ActiveSlot {
+  SLOT_PRIMARY = 0,
+  SLOT_SECONDARY,
+  SLOT_POCKET,
+  SLOT_POCKET2
+}
