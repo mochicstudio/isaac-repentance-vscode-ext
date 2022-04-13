@@ -2,7 +2,7 @@
   "name": "isaac-repentance-api",
   "displayName": "Isaac-Repentance-API",
   "description": "The Binding of Isaac Repentance Lua API",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "mochicstudio",
   "repository": {
     "type": "git",
