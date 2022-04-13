@@ -18,6 +18,7 @@ import {
   TextDocument
 } from 'vscode-languageserver-textdocument';
 
+import { ActionTriggers } from './enum/action-triggers.enum';
 import { EntityType } from './enum/entity-type.enum';
 
 // Create a connection for the server, using Node's IPC as a transport.
@@ -203,10 +204,16 @@ connection.onCompletion(
       data: 'EntityType'
     });
 
+    completionItems.push({
+      label: 'ActionTriggers',
+      kind: CompletionItemKind.Enum,
+      data: 'ActionTriggers'
+    });
+
     if (line?.endsWith('EntityType.')) {
       type EntityTypeKeys = keyof typeof EntityType;
       const entityTypeKeys = Object.keys(EntityType) as EntityTypeKeys[];
-      completionItems.pop();
+      completionItems = [];
 
       entityTypeKeys.map((entityType: string) => {
         if (EntityType[+entityType]) {
@@ -216,6 +223,20 @@ connection.onCompletion(
             data: entityType
           });
         }
+      });
+    }
+
+    if (line?.endsWith('ActionTriggers.')) {
+      type ActionTriggersKeys = keyof typeof ActionTriggers;
+      const actionTriggersKeys = Object.keys(ActionTriggers) as ActionTriggersKeys[];
+      completionItems = [];
+
+      actionTriggersKeys.map((actionTrigger: string) => {
+        completionItems.push({
+          label: actionTrigger,
+          kind: CompletionItemKind.EnumMember,
+          data: ActionTriggers[actionTrigger as keyof typeof ActionTriggers]
+        });
       });
     }
 

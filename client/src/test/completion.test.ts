@@ -8,6 +8,7 @@ suite('Should do completion', () => {
   test('Completes EntityType Enum in Lua file', async () => {
     await testCompletion(docUri, new vscode.Position(0, 0), {
       items: [
+        { label: 'ActionTriggers', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityType', kind: vscode.CompletionItemKind.Enum }
       ]
     });
@@ -28,7 +29,7 @@ async function testCompletion(
     position
   )) as vscode.CompletionList;
 
-  assert.ok(actualCompletionList.items.length >= 1);
+  assert.ok(actualCompletionList.items.length >= 2);
   expectedCompletionList.items.forEach((expectedItem, i) => {
     const actualItem = actualCompletionList.items[i];
     assert.strictEqual(actualItem.label, expectedItem.label);
