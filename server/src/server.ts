@@ -143,7 +143,7 @@ async function validateTextDocument(textDocument: TextDocument): Promise<void> {
 
   // The validator creates diagnostics for all uppercase words length 2 and more
   const text = textDocument.getText();
-  const pattern = /\b[A-Z]{2,}\b/g;
+  const pattern = /\b[A-Z]{100,}\b/g;
   let m: RegExpExecArray | null;
 
   let problems = 0;

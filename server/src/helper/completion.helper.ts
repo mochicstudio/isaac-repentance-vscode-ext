@@ -8,7 +8,7 @@ const GetEnumsArray = (enumTypes: any, completionKind: any) => {
   });
 };
 
-const GetNoNumbersKey = (keys: any[]) => {
+const GetNoNumbersKeys = (keys: any[]) => {
   return keys.filter((key) => {
     return isNaN(Number(key));
   });
@@ -17,7 +17,7 @@ const GetNoNumbersKey = (keys: any[]) => {
 const GetEnumMembersArray = (enumType: any, completionKind: any) => {
   type EnumTypeKeys = keyof typeof enumType;
   const enumTypeKeys = Object.keys(enumType) as EnumTypeKeys[];
-  const enumTypeNoNumbersKeys = GetNoNumbersKey(enumTypeKeys);
+  const enumTypeNoNumbersKeys = GetNoNumbersKeys(enumTypeKeys);
 
   return enumTypeNoNumbersKeys.map((enumMember, index) => {
     return {
