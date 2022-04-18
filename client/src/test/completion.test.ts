@@ -11,6 +11,7 @@ suite('Should do completion', () => {
         { label: 'ActionTriggers', kind: vscode.CompletionItemKind.Enum },
         { label: 'ActiveSlot', kind: vscode.CompletionItemKind.Enum },
         { label: 'BabySubType', kind: vscode.CompletionItemKind.Enum },
+        { label: 'BackdropType', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityType', kind: vscode.CompletionItemKind.Enum }
       ]
     });
