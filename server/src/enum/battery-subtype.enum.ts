@@ -1,0 +1,6 @@
+export enum BatterySubType {
+  BATTERY_NORMAL = 1,
+  BATTERY_MICRO,
+  BATTERY_MEGA,
+  BATTERY_GOLDEN
+}

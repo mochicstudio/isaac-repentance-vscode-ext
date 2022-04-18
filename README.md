@@ -4,6 +4,7 @@
 - ActiveSlot Enum
 - BabySubType Enum
 - BackdropType Enum
+- BatterySubType Enum
 - EnityType Enum
 ## License
 [MIT](https://github.com/MochicStudio/isaac-repentance-vscode-ext/blob/master/LICENSE)
