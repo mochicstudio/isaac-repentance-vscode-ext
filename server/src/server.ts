@@ -18,10 +18,8 @@ import {
   TextDocument
 } from 'vscode-languageserver-textdocument';
 
-import { AllEnums } from './enum/all-enums.enum';
-import { ActionTriggers } from './enum/action-triggers.enum';
-import { ActiveSlot } from './enum/active-slot.enum';
-import { EntityType } from './enum/entity-type.enum';
+import { AllEnums } from './helper/all-enums';
+import { GetEnumsArray, GetEnumMembersArray } from './helper/completion.helper';
 
 // Create a connection for the server, using Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
@@ -193,69 +191,20 @@ connection.onDidChangeWatchedFiles(_change => {
 
 connection.onCompletion(
   (completionParams: CompletionParams): CompletionItem[] => {
-    let completionItems: CompletionItem[] = [];
+    let completionItems: any[] = [];
     const doc = documents.all().find(doc => doc.uri === completionParams.textDocument.uri);
     const line = doc?.getText({
       start: { line: completionParams.position.line, character: 0 },
       end: completionParams.position
     });
 
-    type AllEnumsKeys = keyof typeof AllEnums;
-    const allEnumsKeys = Object.keys(AllEnums) as AllEnumsKeys[];
+    completionItems = GetEnumsArray(AllEnums, CompletionItemKind.Enum);
 
-    allEnumsKeys.map((oneEnum: string) => {
-      completionItems.push({
-        label: oneEnum,
-        kind: CompletionItemKind.Enum,
-        data: AllEnums[oneEnum as keyof typeof AllEnums]
-      });
+    completionItems.forEach(completionItem => {
+      if (line?.endsWith(completionItem.label + '.')) {
+        completionItems = GetEnumMembersArray(completionItem.data, CompletionItemKind.EnumMember);
+      }
     });
-
-    if (line?.endsWith('ActionTriggers.')) {
-      type ActionTriggersKeys = keyof typeof ActionTriggers;
-      const actionTriggersKeys = Object.keys(ActionTriggers) as ActionTriggersKeys[];
-      completionItems = [];
-
-      actionTriggersKeys.map((actionTrigger: string) => {
-        completionItems.push({
-          label: actionTrigger,
-          kind: CompletionItemKind.EnumMember,
-          data: ActionTriggers[actionTrigger as keyof typeof ActionTriggers]
-        });
-      });
-    }
-
-    if (line?.endsWith('ActiveSlot.')) {
-      type ActiveSlotKeys = keyof typeof ActiveSlot;
-      const activeSlotKeys = Object.keys(ActiveSlot) as ActiveSlotKeys[];
-      completionItems = [];
-
-      activeSlotKeys.map((activeSlot: string) => {
-        if (ActiveSlot[+activeSlot]) {
-          completionItems.push({
-            label: `${ActiveSlot[+activeSlot]}`,
-            kind: CompletionItemKind.EnumMember,
-            data: activeSlot
-          });
-        }
-      });
-    }
-
-    if (line?.endsWith('EntityType.')) {
-      type EntityTypeKeys = keyof typeof EntityType;
-      const entityTypeKeys = Object.keys(EntityType) as EntityTypeKeys[];
-      completionItems = [];
-
-      entityTypeKeys.map((entityType: string) => {
-        if (EntityType[+entityType]) {
-          completionItems.push({
-            label: `${EntityType[+entityType]}`,
-            kind: CompletionItemKind.EnumMember,
-            data: entityType
-          });
-        }
-      });
-    }
 
     return completionItems;
   }
@@ -263,7 +212,12 @@ connection.onCompletion(
 
 connection.onCompletionResolve(
   (item: CompletionItem): CompletionItem => {
-    item.detail = item.data
+    item.detail = item.data;
+
+    if (item.kind === CompletionItemKind.Enum) {
+      item.detail = item.label;
+    }
+
     return item;
   }
 );
