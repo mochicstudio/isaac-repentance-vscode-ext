@@ -5,7 +5,7 @@ import { getDocUri, activate } from './helper';
 suite('Should do completion', () => {
   const docUri = getDocUri('completion.lua');
 
-  test('Completes EntityType Enum in Lua file', async () => {
+  test('Completes Enums in Lua file', async () => {
     await testCompletion(docUri, new vscode.Position(0, 0), {
       items: [
         { label: 'ActionTriggers', kind: vscode.CompletionItemKind.Enum },
@@ -13,6 +13,7 @@ suite('Should do completion', () => {
         { label: 'BabySubType', kind: vscode.CompletionItemKind.Enum },
         { label: 'BackdropType', kind: vscode.CompletionItemKind.Enum },
         { label: 'BatterySubType', kind: vscode.CompletionItemKind.Enum },
+        { label: 'BedSubType', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityType', kind: vscode.CompletionItemKind.Enum }
       ]
     });

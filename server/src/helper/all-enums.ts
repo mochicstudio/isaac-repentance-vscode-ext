@@ -3,6 +3,7 @@ import { ActiveSlot } from '../enum/active-slot.enum';
 import { BabySubType } from '../enum/baby-subtype.enum';
 import { BackdropType } from '../enum/backdrop-type.enum';
 import { BatterySubType } from '../enum/battery-subtype.enum';
+import { BedSubType } from '../enum/bed-subtype.enum';
 import { EntityType } from '../enum/entity-type.enum';
 
 export const AllEnums = [
@@ -11,5 +12,6 @@ export const AllEnums = [
   ['BabySubType', BabySubType],
   ['BackdropType', BackdropType],
   ['BatterySubType', BatterySubType],
+  ['BedSubType', BedSubType],
   ['EntityType', EntityType]
 ];
