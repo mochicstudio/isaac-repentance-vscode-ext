@@ -1,15 +1,17 @@
 # The Binding of Isaac Repentance API VS Code Extension
 ## Code Completion
-- ActionTriggers Enum
-- ActiveSlot Enum
-- BabySubType Enum
-- BackdropType Enum
-- BatterySubType Enum
-- BedSubType Enum
-- BombSubType Enum
-- BombVariant Enum
-- ButtonAction Enum
-- CacheFlag Enum
-- EnityType Enum
+### Enums
+- ActionTriggers
+- ActiveSlot
+- BabySubType
+- BackdropType
+- BatterySubType
+- BedSubType
+- BombSubType
+- BombVariant
+- ButtonAction
+- CacheFlag
+- Card
+- EnityType
 ## License
 [MIT](https://github.com/MochicStudio/isaac-repentance-vscode-ext/blob/master/LICENSE)

@@ -8,6 +8,7 @@ import { BombSubType } from '../enum/bomb-subtype.enum';
 import { BombVariant } from '../enum/bomb-variant.enum';
 import { ButtonAction } from '../enum/button-action.enum';
 import { CacheFlag } from '../enum/cache-flag.enum';
+import { Card } from '../enum/card.enum';
 import { EntityType } from '../enum/entity-type.enum';
 
 export const AllEnums = [
@@ -21,5 +22,6 @@ export const AllEnums = [
   ['BombVariant', BombVariant],
   ['ButtonAction', ButtonAction],
   ['CacheFlag', CacheFlag],
+  ['Card', Card],
   ['EntityType', EntityType]
 ];
