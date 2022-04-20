@@ -5,6 +5,7 @@ import { BackdropType } from '../enum/backdrop-type.enum';
 import { BatterySubType } from '../enum/battery-subtype.enum';
 import { BedSubType } from '../enum/bed-subtype.enum';
 import { BombSubType } from '../enum/bomb-subtype.enum';
+import { BombVariant } from '../enum/bomb-variant.enum';
 import { EntityType } from '../enum/entity-type.enum';
 
 export const AllEnums = [
@@ -15,5 +16,6 @@ export const AllEnums = [
   ['BatterySubType', BatterySubType],
   ['BedSubType', BedSubType],
   ['BombSubType', BombSubType],
+  ['BombVariant', BombVariant],
   ['EntityType', EntityType]
 ];
