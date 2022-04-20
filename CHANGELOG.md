@@ -2,6 +2,7 @@
 ## 0.0.13
 ### Added
 Completion for Card Enum
+Completion for Challenge Enum
 ## 0.0.12
 ### Added
 Completion for CacheFlag Enum
