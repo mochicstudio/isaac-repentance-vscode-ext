@@ -16,6 +16,7 @@ suite('Should do completion', () => {
         { label: 'BedSubType', kind: vscode.CompletionItemKind.Enum },
         { label: 'BombSubType', kind: vscode.CompletionItemKind.Enum },
         { label: 'BombVariant', kind: vscode.CompletionItemKind.Enum },
+        { label: 'ButtonAction', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityType', kind: vscode.CompletionItemKind.Enum }
       ]
     });
