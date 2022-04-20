@@ -6,6 +6,7 @@
 - BackdropType Enum
 - BatterySubType Enum
 - BedSubType Enum
+- BombSubType Enum
 - EnityType Enum
 ## License
 [MIT](https://github.com/MochicStudio/isaac-repentance-vscode-ext/blob/master/LICENSE)

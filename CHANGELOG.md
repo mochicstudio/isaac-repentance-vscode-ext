@@ -1,4 +1,7 @@
 # [Change Log](https://keepachangelog.com/en/1.0.0/)
+## 0.0.9
+### Added
+Completion for BombSubType Enum
 ## 0.0.8
 ### Added
 Completion for BedSubType Enum
