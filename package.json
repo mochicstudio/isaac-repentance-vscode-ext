@@ -12,7 +12,9 @@
     "vscode": "^1.66.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Programming Languages",
+    "Snippets"
   ],
   "icon": "icon.png",
   "activationEvents": [
