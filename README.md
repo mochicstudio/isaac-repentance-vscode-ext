@@ -9,6 +9,7 @@
 - BombSubType Enum
 - BombVariant Enum
 - ButtonAction Enum
+- CacheFlag Enum
 - EnityType Enum
 ## License
 [MIT](https://github.com/MochicStudio/isaac-repentance-vscode-ext/blob/master/LICENSE)
