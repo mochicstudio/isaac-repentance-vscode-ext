@@ -18,6 +18,7 @@ suite('Should do completion', () => {
         { label: 'BombVariant', kind: vscode.CompletionItemKind.Enum },
         { label: 'ButtonAction', kind: vscode.CompletionItemKind.Enum },
         { label: 'CacheFlag', kind: vscode.CompletionItemKind.Enum },
+        { label: 'Card', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityType', kind: vscode.CompletionItemKind.Enum }
       ]
     });
