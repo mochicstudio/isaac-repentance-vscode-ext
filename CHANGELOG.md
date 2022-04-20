@@ -3,6 +3,7 @@
 ### Added
 Completion for Card Enum
 Completion for Challenge Enum
+Completion for ChampionColor Enum
 ## 0.0.12
 ### Added
 Completion for CacheFlag Enum
