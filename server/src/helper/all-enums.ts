@@ -11,6 +11,7 @@ import { CacheFlag } from '../enum/cache-flag.enum';
 import { Card } from '../enum/card.enum';
 import { Challenge } from '../enum/challenge.enum';
 import { ChampionColor } from '../enum/champion-color.enum';
+import { ChestSubType } from '../enum/chest-subtype.enum';
 import { EntityType } from '../enum/entity-type.enum';
 
 export const AllEnums = [
@@ -27,5 +28,6 @@ export const AllEnums = [
   ['Card', Card],
   ['Challenge', Challenge],
   ['ChampionColor', ChampionColor],
+  ['ChestSubType', ChestSubType],
   ['EntityType', EntityType]
 ];
