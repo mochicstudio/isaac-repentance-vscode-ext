@@ -15,6 +15,7 @@ import { ChestSubType } from '../enum/chest-subtype.enum';
 import { CoinSubType } from '../enum/coin-subtype.enum';
 import { Difficulty } from '../enum/difficulty.enum';
 import { Direction } from '../enum/direction.enum';
+import { DoorSlot } from '../enum/door-slot.enum';
 import { EntityType } from '../enum/entity-type.enum';
 
 export const AllEnums = [
@@ -35,5 +36,6 @@ export const AllEnums = [
   ['CoinSubType', CoinSubType],
   ['Difficulty', Difficulty],
   ['Direction', Direction],
+  ['DoorSlot', DoorSlot],
   ['EntityType', EntityType]
 ];
