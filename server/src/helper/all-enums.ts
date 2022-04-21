@@ -12,6 +12,7 @@ import { Card } from '../enum/card.enum';
 import { Challenge } from '../enum/challenge.enum';
 import { ChampionColor } from '../enum/champion-color.enum';
 import { ChestSubType } from '../enum/chest-subtype.enum';
+import { CoinSubType } from '../enum/coin-subtype.enum';
 import { EntityType } from '../enum/entity-type.enum';
 
 export const AllEnums = [
@@ -29,5 +30,6 @@ export const AllEnums = [
   ['Challenge', Challenge],
   ['ChampionColor', ChampionColor],
   ['ChestSubType', ChestSubType],
+  ['CoinSubType', CoinSubType],
   ['EntityType', EntityType]
 ];
