@@ -18,6 +18,7 @@
 - CoinSubType
 - Difficulty
 - Direction
+- DoorSlot
 - EnityType
 ## License
 [MIT](https://github.com/MochicStudio/isaac-repentance-vscode-ext/blob/master/LICENSE)

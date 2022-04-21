@@ -25,6 +25,7 @@ suite('Should do completion', () => {
         { label: 'CoinSubType', kind: vscode.CompletionItemKind.Enum },
         { label: 'Difficulty', kind: vscode.CompletionItemKind.Enum },
         { label: 'Direction', kind: vscode.CompletionItemKind.Enum },
+        { label: 'DoorSlot', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityType', kind: vscode.CompletionItemKind.Enum }
       ]
     });

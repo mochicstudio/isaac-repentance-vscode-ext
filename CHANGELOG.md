@@ -8,6 +8,7 @@ Completion for ChestSubType Enum
 Completion for CoinSubType Enum
 Completion for Difficulty Enum
 Completion for Direction Enum
+Completion for DoorSlot Enum
 ## 0.0.12
 ### Added
 Completion for CacheFlag Enum
