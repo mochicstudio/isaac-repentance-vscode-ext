@@ -23,6 +23,7 @@ suite('Should do completion', () => {
         { label: 'ChampionColor', kind: vscode.CompletionItemKind.Enum },
         { label: 'ChestSubType', kind: vscode.CompletionItemKind.Enum },
         { label: 'CoinSubType', kind: vscode.CompletionItemKind.Enum },
+        { label: 'Difficulty', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityType', kind: vscode.CompletionItemKind.Enum }
       ]
     });
