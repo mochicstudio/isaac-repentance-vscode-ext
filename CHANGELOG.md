@@ -10,6 +10,7 @@ Completion for Difficulty Enum
 Completion for Direction Enum
 Completion for DoorSlot Enum
 Completion for DoorState Enum
+Completion for DoorVariant Enum
 ## 0.0.12
 ### Added
 Completion for CacheFlag Enum

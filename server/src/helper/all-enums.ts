@@ -17,6 +17,7 @@ import { Difficulty } from '../enum/difficulty.enum';
 import { Direction } from '../enum/direction.enum';
 import { DoorSlot } from '../enum/door-slot.enum';
 import { DoorState } from '../enum/door-state.enum';
+import { DoorVariant } from '../enum/door-variant.enum';
 import { EntityType } from '../enum/entity-type.enum';
 
 export const AllEnums = [
@@ -39,5 +40,6 @@ export const AllEnums = [
   ['Direction', Direction],
   ['DoorSlot', DoorSlot],
   ['DoorState', DoorState],
+  ['DoorVariant', DoorVariant],
   ['EntityType', EntityType]
 ];
