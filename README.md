@@ -19,6 +19,7 @@
 - Difficulty
 - Direction
 - DoorSlot
+- DoorState
 - EnityType
 ## License
 [MIT](https://github.com/MochicStudio/isaac-repentance-vscode-ext/blob/master/LICENSE)

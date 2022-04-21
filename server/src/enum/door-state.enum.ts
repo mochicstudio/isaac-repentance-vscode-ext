@@ -1,0 +1,7 @@
+export enum DoorState {
+  STATE_INIT = 0,
+  STATE_CLOSED,
+  STATE_OPEN,
+  STATE_ONE_CHAIN,
+  STATE_HALF_CRACKED
+}
