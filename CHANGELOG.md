@@ -7,6 +7,7 @@ Completion for ChampionColor Enum
 Completion for ChestSubType Enum
 Completion for CoinSubType Enum
 Completion for Difficulty Enum
+Completion for Direction Enum
 ## 0.0.12
 ### Added
 Completion for CacheFlag Enum
