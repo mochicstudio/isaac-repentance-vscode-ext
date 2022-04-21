@@ -20,6 +20,7 @@
 - Direction
 - DoorSlot
 - DoorState
+- DoorVariant
 - EnityType
 ## License
 [MIT](https://github.com/MochicStudio/isaac-repentance-vscode-ext/blob/master/LICENSE)
