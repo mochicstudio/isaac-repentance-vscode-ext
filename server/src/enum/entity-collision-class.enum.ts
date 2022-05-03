@@ -1,0 +1,7 @@
+export enum EntityCollisionClass {
+  ENTCOLL_NONE = 0,
+  ENTCOLL_PLAYERONLY,
+  ENTCOLL_PLAYEROBJECTS,
+  ENTCOLL_ENEMIES,
+  ENTCOLL_ALL
+}
