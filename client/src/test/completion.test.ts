@@ -30,6 +30,7 @@ suite('Should do completion', () => {
         { label: 'DoorState', kind: vscode.CompletionItemKind.Enum },
         { label: 'DoorVariant', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityCollisionClass', kind: vscode.CompletionItemKind.Enum },
+        { label: 'EntityGridCollisionClass', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityType', kind: vscode.CompletionItemKind.Enum }
       ]
     });
