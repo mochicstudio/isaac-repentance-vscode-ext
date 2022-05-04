@@ -13,11 +13,14 @@ import { Challenge } from '../enum/challenge.enum';
 import { ChampionColor } from '../enum/champion-color.enum';
 import { ChestSubType } from '../enum/chest-subtype.enum';
 import { CoinSubType } from '../enum/coin-subtype.enum';
+import { DamageFlag } from '../enum/damage-flag.enum';
 import { Difficulty } from '../enum/difficulty.enum';
 import { Direction } from '../enum/direction.enum';
 import { DoorSlot } from '../enum/door-slot.enum';
 import { DoorState } from '../enum/door-state.enum';
 import { DoorVariant } from '../enum/door-variant.enum';
+import { EntityCollisionClass } from './../enum/entity-collision-class.enum';
+import { EntityGridCollisionClass } from './../enum/entity-grid-collision-class.enum';
 import { EntityType } from '../enum/entity-type.enum';
 
 export const AllEnums = [
@@ -36,10 +39,13 @@ export const AllEnums = [
   ['ChampionColor', ChampionColor],
   ['ChestSubType', ChestSubType],
   ['CoinSubType', CoinSubType],
+  ['DamageFlag', DamageFlag],
   ['Difficulty', Difficulty],
   ['Direction', Direction],
   ['DoorSlot', DoorSlot],
   ['DoorState', DoorState],
   ['DoorVariant', DoorVariant],
+  ['EntityCollisionClass', EntityCollisionClass],
+  ['EntityGridCollisionClass', EntityGridCollisionClass],
   ['EntityType', EntityType]
 ];

@@ -23,11 +23,14 @@ suite('Should do completion', () => {
         { label: 'ChampionColor', kind: vscode.CompletionItemKind.Enum },
         { label: 'ChestSubType', kind: vscode.CompletionItemKind.Enum },
         { label: 'CoinSubType', kind: vscode.CompletionItemKind.Enum },
+        { label: 'DamageFlag', kind: vscode.CompletionItemKind.Enum },
         { label: 'Difficulty', kind: vscode.CompletionItemKind.Enum },
         { label: 'Direction', kind: vscode.CompletionItemKind.Enum },
         { label: 'DoorSlot', kind: vscode.CompletionItemKind.Enum },
         { label: 'DoorState', kind: vscode.CompletionItemKind.Enum },
         { label: 'DoorVariant', kind: vscode.CompletionItemKind.Enum },
+        { label: 'EntityCollisionClass', kind: vscode.CompletionItemKind.Enum },
+        { label: 'EntityGridCollisionClass', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityType', kind: vscode.CompletionItemKind.Enum }
       ]
     });
