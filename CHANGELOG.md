@@ -3,6 +3,7 @@
 ### Added
 Completion for EntityCollisionClass Enum
 Completino for DamageFlag Enum
+Completion for EntityGridCollisionClass Enum
 ## 0.0.13
 ### Added
 Completion for Card Enum
