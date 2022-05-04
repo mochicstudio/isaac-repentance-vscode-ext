@@ -16,6 +16,7 @@
 - ChampionColor
 - ChestSubType
 - CoinSubType
+- DamageFlag
 - Difficulty
 - Direction
 - DoorSlot
