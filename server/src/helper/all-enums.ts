@@ -13,6 +13,7 @@ import { Challenge } from '../enum/challenge.enum';
 import { ChampionColor } from '../enum/champion-color.enum';
 import { ChestSubType } from '../enum/chest-subtype.enum';
 import { CoinSubType } from '../enum/coin-subtype.enum';
+import { DamageFlag } from '../enum/damage-flag.enum';
 import { Difficulty } from '../enum/difficulty.enum';
 import { Direction } from '../enum/direction.enum';
 import { DoorSlot } from '../enum/door-slot.enum';
@@ -37,6 +38,7 @@ export const AllEnums = [
   ['ChampionColor', ChampionColor],
   ['ChestSubType', ChestSubType],
   ['CoinSubType', CoinSubType],
+  ['DamageFlag', DamageFlag],
   ['Difficulty', Difficulty],
   ['Direction', Direction],
   ['DoorSlot', DoorSlot],

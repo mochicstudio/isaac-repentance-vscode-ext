@@ -1,7 +1,8 @@
 # [Change Log](https://keepachangelog.com/en/1.0.0/)
 ## 0.0.14
 ### Added
-Completion for EntityCollisionClass
+Completion for EntityCollisionClass Enum
+Completino for DamageFlag Enum
 ## 0.0.13
 ### Added
 Completion for Card Enum
