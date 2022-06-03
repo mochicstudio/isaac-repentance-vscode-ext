@@ -2,6 +2,7 @@
 ## 0.0.15
 ### Added
 Completion for EntityFlag Enum.
+Completion for EntityPartition Enum.
 ## 0.0.14
 ### Added
 Completion for EntityCollisionClass Enum.

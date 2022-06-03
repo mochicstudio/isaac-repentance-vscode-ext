@@ -22,6 +22,7 @@ import { DoorVariant } from '../enum/door-variant.enum';
 import { EntityCollisionClass } from '../enum/entity-collision-class.enum';
 import { EntityFlag } from '../enum/entity-flag.enum';
 import { EntityGridCollisionClass } from '../enum/entity-grid-collision-class.enum';
+import { EntityPartition } from '../enum/entity-partition.enum';
 import { EntityType } from '../enum/entity-type.enum';
 
 export const AllEnums = [
@@ -49,5 +50,6 @@ export const AllEnums = [
   ['EntityCollisionClass', EntityCollisionClass],
   ['EntityFlag', EntityFlag],
   ['EntityGridCollisionClass', EntityGridCollisionClass],
+  ['EntityPartition', EntityPartition],
   ['EntityType', EntityType]
 ];
