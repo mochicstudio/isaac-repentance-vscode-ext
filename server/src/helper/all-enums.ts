@@ -25,6 +25,7 @@ import { EntityGridCollisionClass } from '../enum/entity-grid-collision-class.en
 import { EntityPartition } from '../enum/entity-partition.enum';
 import { EntityType } from '../enum/entity-type.enum';
 import { GameStateFlag } from '../enum/game-state-flag.enum';
+import { GridCollisionClass } from '../enum/grid-collision-class.enum';
 
 export const AllEnums = [
   ['ActionTriggers', ActionTriggers],
@@ -53,5 +54,6 @@ export const AllEnums = [
   ['EntityGridCollisionClass', EntityGridCollisionClass],
   ['EntityPartition', EntityPartition],
   ['EntityType', EntityType],
-  ['GameStateFlag', GameStateFlag]
+  ['GameStateFlag', GameStateFlag],
+  ['GridCollisionClass', GridCollisionClass]
 ];
