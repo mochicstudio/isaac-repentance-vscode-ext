@@ -6,6 +6,7 @@ Completion for EntityPartition Enum.
 Completion for GameStateFlag Enum.
 Completion for GridCollisionClass Enum.
 Completion for GridEntityType Enum.
+Completion for GridRooms Enum.
 ## 0.0.14
 ### Added
 Completion for EntityCollisionClass Enum.

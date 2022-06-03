@@ -30,5 +30,6 @@
 - GameStateFlag
 - GridCollisionClass
 - GridEntityType
+- GridRooms
 ## License
 [MIT](https://github.com/MochicStudio/isaac-repentance-vscode-ext/blob/master/LICENSE)
