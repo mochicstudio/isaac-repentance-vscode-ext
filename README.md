@@ -23,8 +23,9 @@
 - DoorState
 - DoorVariant
 - EntityCollisionClass
-- EntityGridCollisionClass
 - EntityFlag
+- EntityGridCollisionClass
+- EntityPartition
 - EnityType
 ## License
 [MIT](https://github.com/MochicStudio/isaac-repentance-vscode-ext/blob/master/LICENSE)

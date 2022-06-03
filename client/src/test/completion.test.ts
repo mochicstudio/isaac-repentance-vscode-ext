@@ -32,6 +32,7 @@ suite('Should do completion', () => {
         { label: 'EntityCollisionClass', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityFlag', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityGridCollisionClass', kind: vscode.CompletionItemKind.Enum },
+        { label: 'EntityPartition', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityType', kind: vscode.CompletionItemKind.Enum }
       ]
     });
