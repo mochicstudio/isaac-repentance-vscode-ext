@@ -35,7 +35,8 @@ suite('Should do completion', () => {
         { label: 'EntityPartition', kind: vscode.CompletionItemKind.Enum },
         { label: 'EntityType', kind: vscode.CompletionItemKind.Enum },
         { label: 'GameStateFlag', kind: vscode.CompletionItemKind.Enum },
-        { label: 'GridCollisionClass', kind: vscode.CompletionItemKind.Enum }
+        { label: 'GridCollisionClass', kind: vscode.CompletionItemKind.Enum },
+        { label: 'GridEntityType', kind: vscode.CompletionItemKind.Enum }
       ]
     });
   });
