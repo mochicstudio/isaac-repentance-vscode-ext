@@ -32,6 +32,7 @@
 - GridEntityType
 - GridRooms
 - PillColor
+- PlayerForm
 - PoopSpellType
 - SkinColor
 
