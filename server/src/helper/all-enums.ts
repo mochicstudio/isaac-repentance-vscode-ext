@@ -29,6 +29,7 @@ import { GridCollisionClass } from '../enum/grid-collision-class.enum';
 import { GridEntityType } from '../enum/grid-entity-type.enum';
 import { GridRooms } from '../enum/grid-rooms.enum';
 import { PillColor } from './../enum/pill-color.enum';
+import { PlayerForm } from '../enum/player-form.enum';
 import { PoopSpellType } from '../enum/poop-spell-type.enum';
 import { SkinColor } from '../enum/skin-color.enum';
 
@@ -64,6 +65,7 @@ export const AllEnums = [
   ['GridEntityType', GridEntityType],
   ['GridRooms', GridRooms],
   ['PillColor', PillColor],
+  ['PlayerForm', PlayerForm],
   ['PoopSpellType', PoopSpellType],
   ['SkinColor', SkinColor]
 ];
