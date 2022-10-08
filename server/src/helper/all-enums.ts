@@ -28,6 +28,7 @@ import { GameStateFlag } from '../enum/game-state-flag.enum';
 import { GridCollisionClass } from '../enum/grid-collision-class.enum';
 import { GridEntityType } from '../enum/grid-entity-type.enum';
 import { GridRooms } from '../enum/grid-rooms.enum';
+import { PillColor } from './../enum/pill-color.enum';
 import { PoopSpellType } from '../enum/poop-spell-type.enum';
 import { SkinColor } from '../enum/skin-color.enum';
 
@@ -62,6 +63,7 @@ export const AllEnums = [
   ['GridCollisionClass', GridCollisionClass],
   ['GridEntityType', GridEntityType],
   ['GridRooms', GridRooms],
+  ['PillColor', PillColor],
   ['PoopSpellType', PoopSpellType],
   ['SkinColor', SkinColor]
 ];
