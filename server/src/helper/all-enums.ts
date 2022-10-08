@@ -29,6 +29,7 @@ import { GridCollisionClass } from '../enum/grid-collision-class.enum';
 import { GridEntityType } from '../enum/grid-entity-type.enum';
 import { GridRooms } from '../enum/grid-rooms.enum';
 import { PoopSpellType } from '../enum/poop-spell-type.enum';
+import { SkinColor } from '../enum/skin-color.enum';
 
 export const AllEnums = [
   ['ActionTriggers', ActionTriggers],
@@ -61,5 +62,6 @@ export const AllEnums = [
   ['GridCollisionClass', GridCollisionClass],
   ['GridEntityType', GridEntityType],
   ['GridRooms', GridRooms],
-  ['PoopSpellType', PoopSpellType]
+  ['PoopSpellType', PoopSpellType],
+  ['SkinColor', SkinColor]
 ];
