@@ -1,29 +1,20 @@
 # [Change Log](https://keepachangelog.com/en/1.0.0/)
+
+## 0.0.17
+### Updated
+Changelog
+## 0.0.16
+### Added
+Completion for PoopSpellType, SkinColor, PillColor, PlayerForm, HeartSubType, WeaponType, UseFlag, StageType, RoomShape, RoomType, SortingLayer, PoopPickupSubType, ProjectileVariant enums.
 ## 0.0.15
 ### Added
-Completion for EntityFlag Enum.
-Completion for EntityPartition Enum.
-Completion for GameStateFlag Enum.
-Completion for GridCollisionClass Enum.
-Completion for GridEntityType Enum.
-Completion for GridRooms Enum.
+Completion for EntityFlag, EntityPartition, GameStateFlag, GridCollisionClass, GridEntityType, GridRooms enums.
 ## 0.0.14
 ### Added
-Completion for EntityCollisionClass Enum.
-Completino for DamageFlag Enum.
-Completion for EntityGridCollisionClass Enum.
+Completion for EntityCollisionClass, DamageFlag, EntityGridCollisionClass enums.
 ## 0.0.13
 ### Added
-Completion for Card Enum.
-Completion for Challenge Enum.
-Completion for ChampionColor Enum.
-Completion for ChestSubType Enum.
-Completion for CoinSubType Enum.
-Completion for Difficulty Enum.
-Completion for Direction Enum.
-Completion for DoorSlot Enum.
-Completion for DoorState Enum.
-Completion for DoorVariant Enum.
+Completion for Card, Challenge, ChampionColor, ChestSubType, CoinSubType, Difficulty, Direction, DoorSlot, DoorState, DoorVariant enums.
 ## 0.0.12
 ### Added
 Completion for CacheFlag Enum
@@ -53,8 +44,7 @@ Completion for BabySubType Enum
 Icon
 ## 0.0.3
 ### Added
-Completion for ActiveSlot Enums.
-Partial completion for All Enums.
+Completion for ActiveSlot Enum. Partial completion for All Enums.
 ## 0.0.2
 ### Added
 Completion for ActionTriggers Enum
