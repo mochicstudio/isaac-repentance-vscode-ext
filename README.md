@@ -31,6 +31,7 @@
 - GridCollisionClass
 - GridEntityType
 - GridRooms
+- HeartSubType
 - PillColor
 - PlayerForm
 - PoopSpellType
