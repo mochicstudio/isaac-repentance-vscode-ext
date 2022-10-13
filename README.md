@@ -36,6 +36,7 @@
 - PlayerForm
 - PoopPickupSubType
 - PoopSpellType
+- ProjectileVariant
 - RoomShape
 - RoomType
 - SkinColor
