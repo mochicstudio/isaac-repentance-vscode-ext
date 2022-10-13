@@ -36,6 +36,7 @@
 - PlayerForm
 - PoopSpellType
 - RoomShape
+- RoomType
 - SkinColor
 - StageType
 - UseFlag
