@@ -36,6 +36,7 @@
 - PlayerForm
 - PoopSpellType
 - SkinColor
+- WeaponType
 
 ## License
 [MIT](https://github.com/MochicStudio/isaac-repentance-vscode-ext/blob/master/LICENSE)
