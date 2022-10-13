@@ -28,6 +28,7 @@ import { GameStateFlag } from '../enum/game-state-flag.enum';
 import { GridCollisionClass } from '../enum/grid-collision-class.enum';
 import { GridEntityType } from '../enum/grid-entity-type.enum';
 import { GridRooms } from '../enum/grid-rooms.enum';
+import { HeartSubType } from '../enum/heart-subtype.enum';
 import { PillColor } from './../enum/pill-color.enum';
 import { PlayerForm } from '../enum/player-form.enum';
 import { PoopSpellType } from '../enum/poop-spell-type.enum';
@@ -64,6 +65,7 @@ export const AllEnums = [
   ['GridCollisionClass', GridCollisionClass],
   ['GridEntityType', GridEntityType],
   ['GridRooms', GridRooms],
+  ['HeartSubType', HeartSubType],
   ['PillColor', PillColor],
   ['PlayerForm', PlayerForm],
   ['PoopSpellType', PoopSpellType],
