@@ -35,6 +35,7 @@ import { PoopSpellType } from '../enum/poop-spell-type.enum';
 import { RoomShape } from '../enum/room-shape.enum';
 import { RoomType } from '../enum/room-type.enum';
 import { SkinColor } from '../enum/skin-color.enum';
+import { SortingLayer } from '../enum/sorting-layer.enum';
 import { StageType } from '../enum/stage-type.enum';
 import { UseFlag } from '../enum/use-flag.enum';
 import { WeaponType } from '../enum/weapon-type.enum';
@@ -77,6 +78,7 @@ export const AllEnums = [
   ['RoomShape', RoomShape],
   ['RoomType', RoomType],
   ['SkinColor', SkinColor],
+  ['SortingLayer', SortingLayer],
   ['StageType', StageType],
   ['UseFlag', UseFlag],
   ['WeaponType', WeaponType]
