@@ -34,6 +34,7 @@
 - HeartSubType
 - PillColor
 - PlayerForm
+- PoopPickupSubType
 - PoopSpellType
 - RoomShape
 - RoomType
