@@ -38,6 +38,7 @@
 - RoomShape
 - RoomType
 - SkinColor
+- SortingLayer
 - StageType
 - UseFlag
 - WeaponType
