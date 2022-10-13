@@ -33,6 +33,7 @@ import { PillColor } from './../enum/pill-color.enum';
 import { PlayerForm } from '../enum/player-form.enum';
 import { PoopSpellType } from '../enum/poop-spell-type.enum';
 import { SkinColor } from '../enum/skin-color.enum';
+import { WeaponType } from '../enum/weapon-type.enum';
 
 export const AllEnums = [
   ['ActionTriggers', ActionTriggers],
@@ -69,5 +70,6 @@ export const AllEnums = [
   ['PillColor', PillColor],
   ['PlayerForm', PlayerForm],
   ['PoopSpellType', PoopSpellType],
-  ['SkinColor', SkinColor]
+  ['SkinColor', SkinColor],
+  ['WeaponType', WeaponType]
 ];
