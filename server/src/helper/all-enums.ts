@@ -32,6 +32,7 @@ import { HeartSubType } from '../enum/heart-subtype.enum';
 import { PillColor } from './../enum/pill-color.enum';
 import { PlayerForm } from '../enum/player-form.enum';
 import { PoopSpellType } from '../enum/poop-spell-type.enum';
+import { RoomShape } from '../enum/room-shape.enum';
 import { SkinColor } from '../enum/skin-color.enum';
 import { StageType } from '../enum/stage-type.enum';
 import { UseFlag } from '../enum/use-flag.enum';
@@ -72,6 +73,7 @@ export const AllEnums = [
   ['PillColor', PillColor],
   ['PlayerForm', PlayerForm],
   ['PoopSpellType', PoopSpellType],
+  ['RoomShape', RoomShape],
   ['SkinColor', SkinColor],
   ['StageType', StageType],
   ['UseFlag', UseFlag],
