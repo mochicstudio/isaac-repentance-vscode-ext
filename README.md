@@ -36,6 +36,7 @@
 - PlayerForm
 - PoopSpellType
 - SkinColor
+- UseFlag
 - WeaponType
 
 ## License
