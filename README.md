@@ -40,6 +40,7 @@
 - RenderMode
 - RoomShape
 - RoomType
+- SackSubType
 - SkinColor
 - SortingLayer
 - StageType
