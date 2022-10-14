@@ -37,6 +37,7 @@
 - PoopPickupSubType
 - PoopSpellType
 - ProjectileVariant
+- RenderMode
 - RoomShape
 - RoomType
 - SkinColor
