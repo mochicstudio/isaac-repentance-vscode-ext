@@ -34,6 +34,7 @@ import { PlayerForm } from '../enum/player-form.enum';
 import { PoopPickupSubType } from '../enum/poop-pickup-subtype.enum';
 import { PoopSpellType } from '../enum/poop-spell-type.enum';
 import { ProjectileVariant } from '../enum/projectile-variant.enum';
+import { RenderMode } from '../enum/render-mode.enum';
 import { RoomShape } from '../enum/room-shape.enum';
 import { RoomType } from '../enum/room-type.enum';
 import { SkinColor } from '../enum/skin-color.enum';
@@ -79,6 +80,7 @@ export const AllEnums = [
   ['PoopPickupSubType', PoopPickupSubType],
   ['PoopSpellType', PoopSpellType],
   ['ProjectileVariant', ProjectileVariant],
+  ['RenderMode', RenderMode],
   ['RoomShape', RoomShape],
   ['RoomType', RoomType],
   ['SkinColor', SkinColor],
