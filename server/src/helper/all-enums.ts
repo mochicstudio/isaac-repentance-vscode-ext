@@ -37,6 +37,7 @@ import { ProjectileVariant } from '../enum/projectile-variant.enum';
 import { RenderMode } from '../enum/render-mode.enum';
 import { RoomShape } from '../enum/room-shape.enum';
 import { RoomType } from '../enum/room-type.enum';
+import { SackSubType } from '../enum/sack-subtype.enum';
 import { SkinColor } from '../enum/skin-color.enum';
 import { SortingLayer } from '../enum/sorting-layer.enum';
 import { StageType } from '../enum/stage-type.enum';
@@ -83,6 +84,7 @@ export const AllEnums = [
   ['RenderMode', RenderMode],
   ['RoomShape', RoomShape],
   ['RoomType', RoomType],
+  ['SackSubType', SackSubType],
   ['SkinColor', SkinColor],
   ['SortingLayer', SortingLayer],
   ['StageType', StageType],
