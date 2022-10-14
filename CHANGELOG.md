@@ -1,5 +1,8 @@
 # [Change Log](https://keepachangelog.com/en/1.0.0/)
 
+## 0.1.2
+### Added
+Completion for RenderMode, SackSubType and PlayerSpriteLayout enums.
 ## 0.1.1
 ### Fixes
 There were some problems related to the publishing tool so upgrading to v0.1.1
