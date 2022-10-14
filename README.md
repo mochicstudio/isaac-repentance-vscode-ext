@@ -34,6 +34,7 @@
 - HeartSubType
 - PillColor
 - PlayerForm
+- PlayerSpriteLayer
 - PoopPickupSubType
 - PoopSpellType
 - ProjectileVariant

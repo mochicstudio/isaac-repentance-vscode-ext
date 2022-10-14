@@ -31,6 +31,7 @@ import { GridRooms } from '../enum/grid-rooms.enum';
 import { HeartSubType } from '../enum/heart-subtype.enum';
 import { PillColor } from './../enum/pill-color.enum';
 import { PlayerForm } from '../enum/player-form.enum';
+import { PlayerSpriteLayer } from '../enum/player-sprite-layer.enum';
 import { PoopPickupSubType } from '../enum/poop-pickup-subtype.enum';
 import { PoopSpellType } from '../enum/poop-spell-type.enum';
 import { ProjectileVariant } from '../enum/projectile-variant.enum';
@@ -78,6 +79,7 @@ export const AllEnums = [
   ['HeartSubType', HeartSubType],
   ['PillColor', PillColor],
   ['PlayerForm', PlayerForm],
+  ['PLayerSpriteLayer', PlayerSpriteLayer],
   ['PoopPickupSubType', PoopPickupSubType],
   ['PoopSpellType', PoopSpellType],
   ['ProjectileVariant', ProjectileVariant],
