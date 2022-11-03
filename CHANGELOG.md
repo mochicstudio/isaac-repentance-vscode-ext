@@ -1,3 +1,4 @@
+# NO LONGER IN DEVELOPMENT USE [THIS](https://marketplace.visualstudio.com/items?itemName=Filloax.isaac-lua-api-vscode) INSTEAD.
 # [Change Log](https://keepachangelog.com/en/1.0.0/)
 
 ## 0.1.2

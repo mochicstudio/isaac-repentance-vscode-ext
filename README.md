@@ -1,3 +1,4 @@
+# NO LONGER IN DEVELOPMENT USE [THIS](https://marketplace.visualstudio.com/items?itemName=Filloax.isaac-lua-api-vscode) INSTEAD.
 # The Binding of Isaac Repentance API VS Code Extension
 ## Code Completion
 ### Enums
